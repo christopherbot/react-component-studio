@@ -1,0 +1,44 @@
+.hexagon {
+  position: relative;
+  display: inline-block;
+}
+
+.hexagon-center {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hexagon-top,
+.hexagon-bottom {
+  width: 0;
+}
+
+.hexagon-top {
+  bottom: 100%;
+}
+
+.hexagon-bottom {
+  top: 100%;
+}
+
+// for a hexagon within a hexagon
+.hexagon .hexagon {
+  transform: scale(0.9, 0.9);
+  z-index: 1;
+
+  .hexagon-center {
+    /*
+     * For some reason there is a space between the
+     * top, center, and bottom shapes of the inner
+     * hexagon. This (hack?) closes those spaces.
+     */
+    top: -1px;
+    height: calc(100% + 2px);
+  }
+
+  .hexagon-top,
+  .hexagon-bottom {
+    position: absolute;
+  }
+}
