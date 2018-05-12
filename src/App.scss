@@ -1,7 +1,36 @@
+$purple: #314676;
+$dark-blue: #162548;
+$lightest-grey: #F8F8F8;
+$light-grey: #E8E8E8;
+$grey: #CDCDCD;
+$red: #AF3D40;
+$deep-black: #071025;
+
+$playground-background-color: $lightest-grey;
+$component-demo-background-color: $light-grey;
+
 body {
   height: 100%;
 }
 
-.test {
-  font-size: 15px;
+h1, h2, h3 {
+  margin: 0;
+}
+
+.bc-playground {
+  background-color: $playground-background-color;
+}
+
+.component-demo {
+  background-color: $component-demo-background-color;
+  padding: 10px;
+}
+
+.component-props {
+  background-color: $grey;
+  padding: 10px;
+}
+
+.component {
+  padding: 10px 0;
 }
