@@ -1,5 +1,8 @@
 import React from 'react'
 
-const App = () => <div>Test</div>
+import './App.scss'
+
+const App = () =>
+  <div className="test">Test</div>
 
 export default App

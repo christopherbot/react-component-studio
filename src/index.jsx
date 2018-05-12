@@ -5,9 +5,7 @@ import App from './app'
 const rootElement = document.querySelector('#main-canvas')
 
 const renderApplication = () => {
-  ReactDOM.render((
-    <App />
-  ), rootElement)
+  ReactDOM.render(<App />, rootElement)
 }
 
 renderApplication()
