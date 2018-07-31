@@ -6,8 +6,9 @@ $grey: #CDCDCD;
 $red: #AF3D40;
 $deep-black: #071025;
 
-$playground-background-color: $lightest-grey;
-$component-demo-background-color: $light-grey;
+$playground-color: $lightest-grey;
+$demo-background-color: $light-grey;
+$props-background-color: $grey;
 
 body {
   height: 100%;
@@ -17,17 +18,17 @@ h1, h2, h3 {
   margin: 0;
 }
 
-.bc-playground {
-  background-color: $playground-background-color;
+.playground {
+  background-color: $playground-color;
 }
 
-.component-demo {
-  background-color: $component-demo-background-color;
+.demo {
+  background-color: $demo-background-color;
   padding: 10px;
 }
 
-.component-props {
-  background-color: $grey;
+.props {
+  background-color: $props-background-color;
   padding: 10px;
 }
 
