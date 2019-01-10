@@ -1,0 +1,43 @@
+.loading-bar__container {
+  width: 100%;
+}
+
+.loading-bar__container--defaults {
+  position: relative;
+}
+
+.loading-bar {
+  height: 100%;
+  width: 0;
+  animation: loading-bar linear;
+}
+
+@keyframes loading-bar {
+  0% {
+    width: 0;
+  }
+  2% {
+    width: 40%;
+  }
+  5% {
+    width: 65%;
+  }
+  9% {
+    width: 80%;
+  }
+  15% {
+    width: 90%;
+  }
+  40% {
+    width: 95%;
+  }
+  60% {
+    width: 97%;
+  }
+  75% {
+    width: 98%;
+  }
+  99% {
+    width: 99%;
+  }
+}
